@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewrite>
+	<rule>
+    	<from>/(.*)-([0-9]+)</from>
+        <to>/danh-muc?cid=$2</to>
+    </rule>
+    <rule>
+    	<from>/(.*)-([0-9]+)/p([0-9]+)</from>
+        <to>/danh-muc?cid=$2&amp;page=$3</to>
+    </rule>
+    <rule>
+    	<from>/page-([0-9]+)</from>
+        <to>?page=$1</to>
+    </rule>
+    <rule>
+    	<from>/(.*)_([0-9]+).html</from>
+        <to>/chi-tiet?nid=$2</to>
+    </rule>
+    
+    
+    <rule>
+    	<from>/admin/cat/index/page-([0-9]+)</from>
+        <to>/admin/cat/index?page=$1</to>
+    </rule>
+    <rule>
+    	<from>/admin/cat/edit/([0-9]+)</from>
+        <to>/admin/cat/edit?cid=$1</to>
+    </rule>
+    
+    <rule>
+    	<from>/admin/new/index/page_([0-9]+)</from>
+        <to>/admin/new/index?page=$1</to>
+    </rule>
+    <rule>
+    	<from>/admin/new/edit/([0-9]+)</from>
+        <to>/admin/new/edit?id=$1</to>
+    </rule>
+    
+    <rule>
+    	<from>/admin/comments/page_([0-9]+)</from>
+        <to>/admin/comments?page=$1</to>
+    </rule>
+    
+    <rule>
+    	<from>/admin/user/index/page-([0-9]+)</from>
+        <to>/admin/user/index?page=$1</to>
+    </rule>
+    <rule>
+    	<from>/admin/user/edit/([0-9]+)</from>
+        <to>/admin/user/edit?id=$1</to>
+    </rule>
+    
+    <rule>
+    	<from>/admin/slide/index/page_([0-9]+)</from>
+        <to>/admin/slide/index?page=$1</to>
+    </rule>
+    <rule>
+    	<from>/admin/slide/edit/([0-9]+)</from>
+        <to>/admin/slide/edit?id=$1</to>
+    </rule>
+</urlrewrite>
